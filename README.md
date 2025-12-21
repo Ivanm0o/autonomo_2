@@ -1,22 +1,30 @@
-# autónomo 2
-PROYECTO: JUEGO DE PIEDRA, PAPEL O TIJERA
+# PROYECTO FINAL: PIEDRA, PAPEL O TIJERA (V2.0 CON INTERFAZ)
+DESCRIPCIÓN: Evolución del proyecto clásico de consola a una aplicación de escritorio completa. El programa ahora cuenta con una interfaz gráfica (GUI) moderna, navegación entre pantallas (Login -> Juego) y marcadores en tiempo real.
 
-DESCRIPCION: Este es un juego desarrollado en Python como tarea de la clase. El programa permite jugar contra la computadora, cuenta las victorias y derrotas, y deja seguir jugando las veces que uno quiera.
+# HERRAMIENTAS Y TECNOLOGÍAS:
 
-HERRAMIENTAS UTILIZADAS:
+Lenguaje: Python 3.
 
-Lenguaje: Python
+Interfaz: Librería tkinter (Investigación propia para la Unidad 4).
 
-Diagramas de flujo: Bizagi y Raptor
+Lógica: Librería random.
 
-Editor: Visual Studio Code
+Diseño Lógico: Bizagi / Raptor.
 
-COMO FUNCIONA EL CODIGO: Use un bucle "while" para que el juego se repita hasta que el usuario diga que no. Use condicionales "if" para ver quien gana (Piedra gana a Tijera, etc). Use la libreria random solo para que la PC elija un numero al azar.
+# INTEGRACIÓN DE LAS 4 UNIDADES (CAMBIOS TÉCNICOS): Para cumplir con la rúbrica final, reestructuré todo el código antiguo:
 
-ARCHIVOS INCLUIDOS:
+De input a Entry (Unidad 2): Ya no uso la consola para pedir el nombre. Creé una pantalla de inicio con una caja de texto (Entry) y validación de usuario.
 
-juego_ppt.py (El codigo del juego)
+De print a Label (Unidad 2): Los resultados ya no se imprimen línea por línea; ahora actualizo etiquetas visuales en la ventana.
 
-Archivos e imágenes en caso de que no abran los diagramas (Raptor y Bizagi)
+Tuplas (Unidad 3): Implementé la tupla OPCIONES = ("Piedra", "Papel", "Tijera") para manejar datos fijos e inmutables.
 
-COMO EJECUTAR: Solo es necesario abrir el archivo juego_ppt.py y ejecutarlo. El juego pedira el nombre y luego elegir una opcion (1, 2 o 3).
+Modularización (Unidad 4): El código antiguo era un bloque único. El nuevo usa funciones separadas (turno_pc, calcular_ganador) para organizar la lógica, separando el "backend" (cálculos) del "frontend" (visual).
+
+# CÓMO EJECUTAR:
+
+Abrir juego_gui.py en Visual Studio Code.
+
+Dar clic en "Run".
+
+Ingresar nombre en la ventana negra y jugar.
